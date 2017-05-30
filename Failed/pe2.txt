@@ -1,0 +1,18 @@
+python -c "import random; random.seed(1); print random.randint(0,2**30)"
+144272508
+
+
+Enter the password: random.seed(1)
+None
+
+Enter the password: random.seed(1) == None
+True
+
+Enter the password: (random.seed(1) == None) * 144272508
+144272508
+
+
+random.randint = lambda x, y: "None"
+def override(message):
+
+exec 'random.randint=lambda x, y: "None"'
